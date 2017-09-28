@@ -1,93 +1,24 @@
-import java.util.ArrayList;
-import java.util.logging.Level;
-
-// Vehicle and its inherited classes.
-public enum VehicleSize { Motorcycle, Compact,Large }
- 
-public abstract class Vehicle
-{
-      protected ArrayList<ParkingSpot> parkingSpots =
-                           new ArrayList<ParkingSpot>();
-      protected String licensePlate;
-      protected int spotsNeeded;
-      protected VehicleSize size;
- 
-      public int getSpotsNeeded()
-      {
-          return spotsNeeded;
-      }
-      public VehicleSize getSize()
-      {
-          return size;
-      }
- 
-      /* Park vehicle in this spot (among others,
-         potentially) */
-      public void parkinSpot(ParkingSpot s)
-      {
-          parkingSpots.add(s);
-      }
- 
- 
-      /* Remove vehicle from spot, and notify spot
-         that it's gone */
-      public void clearSpots() {  }
- 
-      /* Checks if the spot is big enough for the
-         vehicle (and is available).
-         This * compares the SIZE only.It does not
-        check if it has enough spots. */
-      public abstract boolean canFitinSpot(ParkingSpot spot);
-}
- 
- 
-public class Car extends Vehicle
-{
-    public Car()
-    {
-        spotsNeeded = 1;
-        size = VehicleSize.Compact;
-    }
- 
-    /* Checks if the spot is a Compact or a Large. */
-    public boolean canFitinSpot(ParkingSpot spot) 
-    {  }
-}
- 
+import java.util.Random;
+import java.util.Scanner;
 
 public class ParkingSpot
 {
-    private Vehicle vehicle;
-    private VehicleSize spotSize;
-    private int row;
-    private int spotNumber;
-    private Level level;
- 
-    public ParkingSpot(Level lvl, int r, int n,
-                         VehicleSize s)
-    { }
- 
-    public boolean isAvailable()
-    {
-        return vehicle == null;
-    }
- 
-    /* Check if the spot is big enough and is available */
-    public boolean canFitVehicle(Vehicle vehicle) {return true;  }
- 
-    /* Park vehicle in this spot. */
-    public boolean park(Vehicle v) {return true; }
- 
-    public int getRow()
-    {
-        return row;
-    }
-    public int getSpotNumber()
-    {
-        return spotNumber;
-    }
- 
-    /* Remove vehicle from spot, and notify
-      level that a new spot is available */
-    public void removeVehicle() {  }
+   String Vno;
+   int type;
+   int token;
+	void parking()
+   {
+	   System.out.println("Enter vechile Number");
+	   Scanner s=new Scanner(System.in);
+//	   ParkingSpot[] park=new ParkingSpot[10];
+	   Vno=s.nextLine();
+	   System.out.println("Enter Vechile Type\n 2 or 4");
+	   type=s.nextInt();
+	   Random r=new Random();
+	   token= r.nextInt(999);
+	   System.out.println("your valet parking id is ->"+token+"\n");
+	   
+	   
+	   
+   }
 }
