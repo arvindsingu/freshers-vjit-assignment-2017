@@ -1,3 +1,4 @@
+//REVIEW 
 import java.util.Scanner;
 
 public class Review {
@@ -15,7 +16,7 @@ public class Review {
 			
 		}
 			
-		System.out.println("Any other suggestions ?");
+		System.out.println("Feedback:\n");
 		String support1=f.next();
 		System.out.println("Thank you!\tPlease visit again\n");
 	}
