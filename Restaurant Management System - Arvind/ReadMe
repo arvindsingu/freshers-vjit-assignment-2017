@@ -1,0 +1,18 @@
+Hello there!
+
+I am Arvind of CSE branch, VJIT.
+So, I've been a part of the RubiconRed's journey for a short time by submitting my project as a task provided.
+
+The Java application which I have developed of my knowledge would have the features like,
+-Menu
+-valet parking
+-Takeaway
+-Reservation's
+-Check (Bill)
+-Busboy
+-Chef
+-Review's
+
+Each class does it's implementation by the help of the MAIN class providing calls to the other classes.
+
+Thank you!
