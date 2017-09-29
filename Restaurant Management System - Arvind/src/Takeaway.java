@@ -1,3 +1,4 @@
+//Delivery of the food
 import java.util.Scanner;
 public class Takeaway {
 	public void delivery()
