@@ -1,4 +1,4 @@
-
+//Eventual reservation of tables
 import java.util.Random;
 import java.util.Scanner;
 import java.text.SimpleDateFormat;
@@ -14,7 +14,7 @@ class Reserve
 	int reserve_id;
 	System.out.println("Please provide your name:");
 	name=s.nextLine();
-	System.out.println("Time Please:");
+	System.out.println("Date Please:");
 	dt=s.nextLine();
 	System.out.println("Seat's to booked:");
 	num=s.nextInt();
